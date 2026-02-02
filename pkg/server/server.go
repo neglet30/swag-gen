@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/your-org/swag-gen/pkg/config"
-	"github.com/your-org/swag-gen/pkg/logger"
+	"github.com/neglet30/swag-gen/pkg/config"
+	"github.com/neglet30/swag-gen/pkg/logger"
 )
 
 // Server HTTP 服务器

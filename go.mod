@@ -1,4 +1,4 @@
-module github.com/your-org/swag-gen
+module github.com/neglet30/swag-gen
 
 go 1.25.5
 
