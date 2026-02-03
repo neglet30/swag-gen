@@ -16,7 +16,7 @@
 - 📄 **标准规范**: 生成标准的 Swagger/OpenAPI 3.0 规范文档
 
 ## 使用流程
-1. **安装**: `go get github.com/your-org/swag-gen`
+1. **安装**: `go get github.com/neglet30/swag-gen`
 2. **初始化**: `swag-gen init [参数]` - 扫描项目并生成文档
 3. **集成路由**: 在项目中集成 swag-gen 提供的路由
 4. **访问 UI**: 通过浏览器访问 API 文档和测试界面
@@ -26,3 +26,6 @@
 - API 文档维护者
 - 需要快速生成 API 文档的团队
 - 希望提供在线 API 测试工具的项目
+
+## 提问回答
+- 以后所有回答都是用中文

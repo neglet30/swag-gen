@@ -56,11 +56,13 @@ func ErrorHandlerMiddleware() gin.HandlerFunc {
 		// 检查是否有错误
 		if len(c.Errors) > 0 {
 			err := c.Errors.Last()
-			logger.Error(
-				"请求处理错误",
-				zap.String("error", err.Error()),
-				zap.String("path", c.Request.URL.Path),
-			)
+			if err != nil && err.Err != nil {
+				logger.Error(
+					"请求处理错误",
+					zap.String("error", err.Error()),
+					zap.String("path", c.Request.URL.Path),
+				)
+			}
 		}
 	}
 }

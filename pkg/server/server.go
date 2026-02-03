@@ -72,6 +72,16 @@ func (s *Server) Stop() error {
 	return nil
 }
 
+// GetEngine 获取 Gin 引擎
+func (s *Server) GetEngine() *gin.Engine {
+	return s.engine
+}
+
+// GetConfig 获取服务器配置
+func (s *Server) GetConfig() *config.Config {
+	return s.config
+}
+
 // 处理器方法
 
 // healthHandler 健康检查处理器
